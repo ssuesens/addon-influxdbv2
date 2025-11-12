@@ -31,7 +31,7 @@ ports_description:
   # 8088/tcp: RPC service for backup and restore
 auth_api: true
 options:
-  INFLUXD_ENGINE_PATH : "/share/volume1/influxdb"
+  INFLUXD_ENGINE_PATH: "/share/volume1/influxdb"
   # auth: true
   # reporting: true
   # ssl: true
@@ -45,6 +45,7 @@ schema:
   #ssl: bool
   #certfile: str
   #keyfile: str
+  INFLUXD_ENGINE_PATH: str
   envvars:
     - name: match(^INFLUXDB_([A-Z0-9_])+$)
       value: str
